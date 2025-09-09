@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-family: PingFangSC-Regular, PingFang SC, CenturyGothic;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .page {
+        position: relative;
+        width: 992px;
+        height: 1260px;
+        padding: 10px 30px;
+      }
+
+      .h1Title {
+        color: #0195ff;
+        font-size: 24px;
+        text-align: center;
+      }
+      table {
+        width: 100%;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+      }
+      table,
+      tbody,
+      tr {
+        border: none;
+      }
+
+      td,
+      th {
+        padding: 2px 8px;
+        line-height: 40px;
+        text-align: left;
+        word-break: break-all;
+        border: 1px solid #f0f0f0;
+      }
+      th {
+        background-color: #f7f7f7;
+      }
+
+      td.title {
+        width: 170px;
+        text-align: center;
+      }
+      td.content {
+        width: 366px;
+        line-height: 24px;
+      }
+      .inspectionTable td,
+      th {
+        text-align: center;
+      }
+      .tdW100px {
+        width: 100px;
+      }
+
+      .normal {
+        color: green;
+      }
+
+      .abnormal {
+        color: red;
+      }
+      h3 {
+        text-align: center;
+      }
+
+      .cardWrapper {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-radius: 8px;
+      }
+      .cardWrapper table {
+        margin-bottom: 0;
+      }
+      .cardWrapper td,
+      .cardWrapper th {
+        background-color: transparent;
+        border: none;
+      }
+      .cardWrapper td.title {
+        text-align: left;
+      }
+
+      .contentCardWrapper {
+        margin-bottom: 20px;
+        padding: 8px 8px 0 8px;
+        border: 1px solid #f5f5f5;
+        border-radius: 8px;
+        box-shadow: #ebeaea 2px 2px 8px;
+      }
+      .itemWrapper {
+        margin-bottom: 8px;
+        padding: 12px;
+        background-color: #f7f7f7;
+        border-radius: 8px;
+        box-shadow: #ebeaea 1px 1px 2px;
+      }
+      img {
+        width: 250px;
+        max-height: 350px;
+        object-fit: contain;
+      }
+
+      .watermark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0">
+    <div id="pageContainer"></div>
+    <script src="./demoData.js"></script>
+    <script>
+      // console.log(reportData);
+      // var reportData = { reportDataReference };
+      var reportData = #reportDataReference#;
+
+      // 时间戳转换日期时间
+      function formatDate(timestamp) {
+        var date = new Date(timestamp);
+
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+
+        // 补零函数
+        function padZero(num) {
+          return num < 10 ? '0' + num : num;
+        }
+
+        return (
+          year +
+          '-' +
+          padZero(month) +
+          '-' +
+          padZero(day) +
+          ' ' +
+          padZero(hours) +
+          ':' +
+          padZero(minutes) +
+          ':' +
+          padZero(seconds)
+        );
+      }
+      // 项目基础信息
+      function getProjectInfo(prop) {
+        if (prop === 'serviceTimestamp') {
+          return formatDate(reportData[prop]);
+        } else {
+          if (
+            reportData[prop] === undefined ||
+            reportData[prop] === null ||
+            reportData[prop] === ''
+          )
+            return '-';
+          return reportData[prop];
+        }
+      }
+
+      var basicInfoRow1 =
+        "<tr><td class='title'>中心：</td><td class='content'>" +
+        getProjectInfo('centerName') +
+        '</td></tr>';
+      var basicInfoRow2 =
+        "<tr><td class='title'>项目名称：</td><td class='content'>" +
+        getProjectInfo('projectName') +
+        "</td><td class='title' colspan='1'>项目地址：</td><td class='content' colspan='3'>" +
+        getProjectInfo('location') +
+        '</td></tr>';
+      var basicInfoRow3 =
+        "<tr><td class='title'>用户联系人：</td><td class='content'>" +
+        getProjectInfo('adminName') +
+        "</td><td class='title'>用户联系人电话：</td><td class='content'>" +
+        getProjectInfo('adminPhone') +
+        '</td></tr>';
+      var basicInfoRow4 =
+        "<tr><td class='title'>服务日期时间：</td><td class='content'>" +
+        getProjectInfo('serviceTimestamp') +
+        "</td><td class='title'>服务时长(h)：</td><td class='content'>" +
+        getProjectInfo('serviceDuration') +
+        '</td></tr>';
+      var basicInfoRow5 =
+        "<tr><td class='title'>服务工程师：</td><td class='content'>" +
+        getProjectInfo('serviceEngineer') +
+        "</td><td class='title'>主动服务类型：</td><td class='content'>" +
+        getProjectInfo('activeServiceTypeName') +
+        '</td></tr>';
+      var projectBasicInfoHtml =
+        '<h3>一、项目概况</h3>' +
+        "<div class='cardWrapper'>" +
+        '<table>' +
+        basicInfoRow1 +
+        basicInfoRow2 +
+        basicInfoRow3 +
+        basicInfoRow4 +
+        basicInfoRow5 +
+        '</table>' +
+        '</div>';
+
+      // 报告内容-动态内容
+      var reportContentTitle = '<h3>二、报告内容</h3>';
+
+      function insertItem(value, data) {
+        if (data.type === 'file') {
+          return (
+            '<div style="margin-bottom:12px;">' +
+            '<img src="' +
+            value +
+            '" / alt="暂无图片">' +
+            '</div>'
+          );
+        } else {
+          return '<span style="margin-left:24px">' + (value || '-') + '</span>';
+        }
+      }
+
+      var reportContentHtml = '<div class="contentWrapper">';
+      var contents = reportData.reportContentDTO;
+      for (var x = 0; x < contents.length; x++) {
+        if (contents[x].tableName || contents[x].formName)
+          reportContentHtml += '<p>' + (contents[x].tableName || contents[x].formName) + '</p>';
+
+        reportContentHtml += "<div class='contentCardWrapper'>";
+        if (contents[x].type === 'table') {
+          for (var m = 0; m < contents[x].rows.length; m++) {
+            reportContentHtml += "<div  class='itemWrapper'>";
+            reportContentHtml +=
+              '<div style="margin-bottom:10px">' + contents[x].rows[m].rowTitle + '</div>';
+            for (var n = 0; n < contents[x].columns.length; n++) {
+              reportContentHtml +=
+                '<div style="margin-bottom:8px;margin-left:12px">' +
+                contents[x].columns[n].title +
+                (contents[x].columns[n].type !== 'file'
+                  ? insertItem(contents[x].rows[m].data[n].value, contents[x].columns[n])
+                  : '') +
+                '</div>';
+              if (contents[x].columns[n].type === 'file'){
+                reportContentHtml += insertItem(
+                  contents[x].rows[m].data[n].value,
+                  contents[x].columns[n]
+                );
+              }
+            }
+            reportContentHtml += '</div>';
+          }
+        } else if (contents[x].type === 'form') {
+          for (var k = 0; k < contents[x].lines.length; k++) {
+            reportContentHtml += "<div  class='itemWrapper'>";
+            reportContentHtml +=
+              '<div style="margin-bottom:10px">' +
+              contents[x].lines[k].title +
+              (contents[x].lines[k].type !== 'file'
+                ? insertItem(contents[x].lines[k].value, contents[x].lines[k])
+                : '') +
+              '</div>';
+            if (contents[x].lines[k].type === 'file') {
+              reportContentHtml += insertItem(contents[x].lines[k].value, contents[x].lines[k]);
+            }
+            reportContentHtml += '</div>';
+          }
+        } else {
+          reportContentHtml += "<div  class='itemWrapper'>";
+          reportContentHtml += '<div style="margin-bottom:10px">' + contents[x].title + '</div>';
+          reportContentHtml += insertItem(contents[x].value, contents[x]);
+          reportContentHtml += '</div>';
+        }
+        reportContentHtml += '</div>';
+      }
+      reportContentHtml += '</div>';
+
+      // 验收交付
+      var acceptanceDelivery =
+        '<h3>验收交付</h3>' +
+        '<div><h4>用户建议、服务结论、其他情况备注</h4></div><div class="cardWrapper">' +
+        (reportData.notes || '-') +
+        '</div>' +
+        '<div><h4>服务工程师签字</h4></div><div><img style="width:100%" height="150" src="' +
+        reportData.serviceEngineerUrl +
+        '"/>' +
+        '</div>' +
+        '<div><h4>甲方负责人签字验收</h4></div><div><img style="width:100%" height="150" src="' +
+        reportData.partyThirdUrl +
+        '"/>' +
+        '</div>';
+
+      var pageHtml =
+        '<div class="page">' +
+        '<h1 class="h1Title" id="htitle">智享关怀·美心服务 主动关怀服务验收报告</h1>' +
+        projectBasicInfoHtml +
+        reportContentTitle +
+        reportContentHtml +
+        acceptanceDelivery +
+        '</div>';
+      document.getElementById('pageContainer').innerHTML = pageHtml;
+    </script>
+  </body>
+</html>

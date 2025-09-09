@@ -1,0 +1,314 @@
+[
+  {
+    "id": "cd198eed-3f9d-4023-8a9f-9970e6b97403",
+    "content": "其他：",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "ae3da50a-dd18-4e32-a6f1-c8fe2a5d722e",
+    "content": "弱弱电是否分开布线：",
+    "result": "是",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "eabd0140-71e0-4f58-8346-0927a2c29c79",
+    "content": "输机线相序是否清扫：",
+    "result": "是",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "3e3bc46d-46aa-4a21-bbe5-dfd382ecaaa5",
+    "content": "启动控制回路是否清扫：",
+    "result": "是",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "ea0edb6c-c5ea-46c7-b5ff-1965d0a1264c",
+    "content": "控制接点是否符合接线图：",
+    "result": "是",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "1cac0e27-83e9-48ea-bcbb-182ab23a6bf0",
+    "content": "控制回路是否连接状态：",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "356888f2-a1bc-4d09-862a-e6470df3f8a8",
+    "content": "端子螺钉是否松动：",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "ce96685e-142c-41d3-8fd1-833973c6e3b7",
+    "content": "启动接线状态是否正常：",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "6265d9e1-8293-48f0-b932-11a854b11353",
+    "content": "压低机组电机绝缘电阻：",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "47775e2b-7f75-4417-bbd2-43f5661b4c2e",
+    "content": "导杆与动杆安装位置正确：",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "2cfc166a-fc23-4a39-9fce-ac629db8ebbb",
+    "content": "不带电机厂机组，气密性试验：保压前=MPa 保压后=MPa\n（充注试验压力1.15±0.05Mpa，保压24h）",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "3dd37848-2417-48e3-b70c-dddf7df8eb70",
+    "content": "不带电机厂机组，真空试验：保压前=MPa 保压后=MPa\n（充注试验压力1.15±0.05Mpa，保压24h）",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "698ca9df-1aee-4be6-9875-33a976999cdc",
+    "content": "冷媒种类（R134a）：",
+    "result": "X kg",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "e1b396a4-28e1-45c6-96ae-080ee3eb972e",
+    "content": "单机泄漏量：",
+    "result": "X g/年（手持点检仪，<5g/年）",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "9b5e2c0b-bc4a-47b7-b027-679668aad70d",
+    "content": "管路流量是否有杂质进入容器：",
+    "result": "是",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "0007f9fe-2a7b-4374-b7d0-3c5e43abb684",
+    "content": "冷却侧泵动作是否正常：",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "9eaf64b0-e982-4202-bd57-df7a3c941451",
+    "content": "冷冻侧泵动作是否正常：",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "c632ce80-97dc-4f2c-abec-ec509566b47a",
+    "content": "水泵、冷却塔检查（流量大于机组额定流量）",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "a213bc8a-d4b8-4318-8b4f-5286dba9d938",
+    "content": "水质检查",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "6242cd07-991a-46e6-bbed-051bd4cdfc79",
+    "content": "紧急压力过低报警：",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "96228907-bef2-4126-8c0f-99395edc5fb2",
+    "content": "高冷压压力过高报警：",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "af9a958f-1963-461f-8e30-8d5ac375f157",
+    "content": "电机线组温度过高报警：",
+    "result": "正常",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "14cf819b-fa90-46db-b297-1a4ac992f38f",
+    "content": "网络类型：",
+    "result": "4G网络",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "328a5d3c-d555-48f9-9d40-6d8362d992c0",
+    "content": "网络强度：",
+    "result": "4G信号强",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "7fc679c2-3d0b-4b46-ab13-14d75b4b576b",
+    "content": "具体差异：",
+    "result": "有",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "0ce24d16-7856-4c87-8d30-0c2a05929612",
+    "content": "用户设定参数：",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "755146b8-611f-430a-8a22-4a4173756e4a",
+    "content": "冷却塔风机组1关闭/开启温度：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "67883ecd-3d49-4465-bd3c-9a5dd2940b26",
+    "content": "冷却塔风机组2关闭/开启温度：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "2e31dc10-8b07-4c04-acf7-678b9da6d2f1",
+    "content": "制冷目标出水温度：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "d10468f8-12b5-4feb-b42a-f75353485e2d",
+    "content": "进水温度：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "914477cd-1b63-454a-94ec-6be9e0d1aa86",
+    "content": "蒸发器壳程控制温度：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "3008b8b6-43e0-46d2-9bbb-a87be2d71fe5",
+    "content": "退出传感温差：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "186f5695-a461-4029-a99d-40f6940fa40b",
+    "content": "进入管传感温差：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "a9a60720-1c8c-4520-9d22-b762cfeb54b5",
+    "content": "串口设置：",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "7bdd34d4-2778-4839-b088-e781b1a2c9eb",
+    "content": "站号（地址）：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "c2410b73-8788-4c9a-b9df-7ec267d445aa",
+    "content": "模式设置：",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "325f9c2d-d814-4fdb-9994-b36f524b8ead",
+    "content": "常规设置：",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "26868341-4d7a-421d-ad6b-1ed5f811bcc2",
+    "content": "当地最低大气压力：",
+    "result": "-kPa",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "75b36383-ab93-4a71-901b-ea418c26b7cf",
+    "content": "压力传感器上限设定：",
+    "result": "-kPa",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "e81821e4-700b-468b-a68d-72548f455cd6",
+    "content": "蒸发器水箱标准位：",
+    "result": "-mm",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "3e4a29b4-04c9-44fe-951c-e47c23bf4249",
+    "content": "满载功率制冰：",
+    "result": "-kW",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "304b1f69-9bfc-4d3b-8dfc-7bc08f11217e",
+    "content": "满载功率制冰：",
+    "result": "-kW",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "d263fd00-adf4-4b98-ad16-9e0f616762da",
+    "content": "压缩机机组顺序：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "23f66b13-e4ed-42b6-859d-fe378a78ce29",
+    "content": "压缩机启动间隔：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "a7028168-fd94-4116-a719-17e104feef11",
+    "content": "快速启动高复信号判断延时：",
+    "result": "-",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "df4fb6fe-6752-469c-8b72-960144b9a3a7",
+    "content": "实现参数：",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "094a9ff0-6324-4ae6-b975-bc8fa3b87740",
+    "content": "变频器频率：",
+    "result": "- 波特率：",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "a9bcd495-b1a5-46ea-8d4e-1faba8d841b7",
+    "content": "读取起始地址：",
+    "result": "- 写起始地址：",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "c9294e96-98f4-4dc6-bd77-f78252465290",
+    "content": "压缩机参数：",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "417968fb-8a8a-4274-9e90-71e7b0548002",
+    "content": "读取起始地址：",
+    "result": "- 写起始地址：",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "afeaf442-bc3b-48fe-a456-3125381bf057",
+    "content": "磁悬浮参数：",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  },
+  {
+    "id": "cae18d1b-65d2-4d64-ac52-3b34e865a66a",
+    "content": "手动悬浮，位移参数在±10范围内：Displace: AZ____FX ____FY____ RX____RY",
+    "result": "",
+    "datakey": "refrigerantChargeAmountRadio"
+  }
+]
